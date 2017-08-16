@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity"
+    android:background="@drawable/woman" >
+    <android.support.v7.view.menu.ActionMenuItemView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+
+        />
+
+
+    <RadioButton
+        android:text="Erkek"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/erkekRadioButton"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_alignBaseline="@+id/kadinRadioButton"
+        android:layout_alignBottom="@+id/kadinRadioButton"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textSize="23sp" />
+
+    <RadioButton
+        android:text="Kadın"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:id="@+id/kadinRadioButton"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textSize="23sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/hesaplaButton"
+       android:textColor="#013220"
+        android:textStyle="bold"
+        android:layout_alignLeft="@+id/erkekRadioButton"
+        android:layout_alignStart="@+id/erkekRadioButton"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/endeksEditText"
+        android:textSize="25sp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:id="@+id/kilonuzTextView"
+        android:textColor="#013220"
+        android:textStyle="bold"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/idealKiloTextView"
+        android:textSize="25sp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#013220"
+        android:textStyle="bold"
+        android:id="@+id/kaloriTextView"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_below="@+id/kilonuzTextView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textSize="25sp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:textColor="#013220"
+        android:textStyle="bold"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/idealKiloTextView"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/endeksEditText"
+        android:textSize="25sp"/>
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageButton"
+
+        android:background="@drawable/button_refresh"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/erkekRadioButton"
+        android:layout_toEndOf="@+id/erkekRadioButton" />
+
+    <Button
+        android:text="HESAPLA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/hesaplaButton"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/kadinRadioButton"
+        android:layout_alignStart="@+id/kadinRadioButton"
+        android:textColorHint="@android:color/background_dark"
+        android:textSize="24sp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="15"
+        android:id="@+id/kiloEditText"
+        android:hint="Lütfen Kilonuzu Giriniz(kg)"
+        android:textColorHint="@android:color/background_dark"
+        android:layout_below="@+id/boyEditText"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:paddingTop="30dp"
+        android:textSize="20sp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="15"
+        android:id="@+id/boyEditText"
+        android:hint="Lütfen Boyunuzu Giriniz(metre(Ör:1.80))"
+        android:textColor="?attr/actionMenuTextColor"
+        android:textColorHint="@android:color/background_dark"
+        android:paddingTop="30dp"
+        android:textSize="20sp"
+        android:layout_below="@+id/erkekRadioButton"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+
+</RelativeLayout>
